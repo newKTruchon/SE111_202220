@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KT">
+    <meta name="description" content="W5D2 tables & forms demo">
+
+    <title>W5D1 - Tables & Forms</title>
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+    <h2>Form w/o Table</h2>
+
+    <form method="" action="">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <br>
+        <input type="submit" value="SUBMIT">
+ 
+    </form>
+
+
+    <h2>Form w/ Table</h2> 
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="firstName">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstName" name="firstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                    </td>
+                </tr>
+                <!--non-text input types-->
+                <tr>
+                    <td>
+                        <label for="study">Pick Your Program Study:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="study" name="study" value="se">Software Engineering <br>
+                        <input type="radio" id="study" name="study" value="cyb">Cybersecurity <br>
+                        <input type="radio" id="study" name="study" value="und">Undecided <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="vehicles">Pick Your Vehicles:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">Car <br>
+                        <input type="checkbox" name="vehicle2" value="bike">Bike <br>
+                        <input type="checkbox" name="vehicle3" value="horse">Horse <br>
+                        <input type="checkbox">Dragon
+                    </td>
+
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="date" name="date">
+                    </td>
+                </tr>   
+                <!--other elements that allow for input-->
+                <tr>
+                    <td>
+                        <label for="faveColor">Pick Your Favorite Color:</label>
+                    </td>
+                    <td>
+                        <select name="faveColor">
+                            <option value="r">Red</option>
+                            <option value="g">Green</option>
+                            <option value="b">Blue</option>
+                        </select>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td>
+                        <label for="comments">Comments:</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" rows=5 cols=20 placeholder=":D"></textarea>
+                    </td>
+                </tr>
+
+                <!--SUBMIT BUTTON-------------------------->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="SUBMIT">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
